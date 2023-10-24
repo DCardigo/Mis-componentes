@@ -1,4 +1,54 @@
-
-body{
+body {
     background-color: antiquewhite;
 }
+
+.box {
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    width: 50vw;
+    height: 30vh;
+    top: 249px;
+    margin: auto;
+    background-color: rgb(139, 139, 245);
+}
+
+.ico {
+    background-color: rgb(139, 211, 245);
+    width: 9vw;
+    height: 17vh;
+    position: relative;
+    top: 6vh;
+    box-shadow: 3px 1px 33px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 31%;
+    justify-content: center;
+}
+
+i {
+    position: relative;
+    top: 1.3rem;
+    left: 1.5rem;
+    font-size: 11vh;
+}
+
+/* .star{
+    background-color: rgb(139, 211, 245);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh;
+}
+.list{
+    background-color: rgb(139, 245, 171);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh
+}
+.step{
+    background-color: rgb(245, 243, 139);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh
+} */
