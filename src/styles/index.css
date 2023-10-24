@@ -1,4 +1,94 @@
-
-body{
+body {
     background-color: antiquewhite;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: 30vh;
+    top: 249px;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0);
+}
+
+.ico {
+    background-color: antiquewhite;
+    width: 9vw;
+    height: 17vh;
+    position: relative;
+    top: 6vh;
+    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 31%;
+}
+
+
+.ico:active {
+    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
+}
+
+i {
+    color: rgba(0, 0, 0, 0.993);
+    position: relative;
+    top: 1.3rem;
+    left: 1.6rem;
+    font-size: 11vh;
+    opacity: 32%;
+
+}
+
+.home{
+    position: relative;
+    top: 18.3rem;
+    left: 40.6rem;
+    background-color: antiquewhite;
+    width: 11vw;
+    height: 6vh;
+    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 12%;
+}
+.home:active {
+    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
+}
+.home p:active{
+    margin-bottom: 0px !important;
+}
+
+/* .star{
+    background-color: rgb(139, 211, 245);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh;
+}
+.list{
+    background-color: rgb(139, 245, 171);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh
+}
+.step{
+    background-color: rgb(245, 243, 139);
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 13vh
+} */
+
+@media (max-width: 600px) {
+    .box {
+        display: block;
+        position: relative;
+        width: 73vw;
+        height: 79vh;
+        top: 83px;
+        margin: auto;
+        background-color: rgba(247, 140, 0, 0);
+    }
+    .ico {
+        top: -5vh;
+        width: 38vw;
+        margin-top: 5rem;
+    }
 }
