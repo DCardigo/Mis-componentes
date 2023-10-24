@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
+
 const Home = () => {
+	// const { actions, store } = useContext(Context);
+
 	return (
-		<div className="box">
-<button  className="ico star mx-auto"><i class="far fa-star"></i></button >
-			<div className="ico star mx-auto"><i class="far fa-star"></i></div>
-			<div className="ico list mx-auto"><i class="fas fa-list-ul"></i></div>
-			<div className="ico step mx-auto">step</div>
+
+		<div>
+			<div className="box">
+
+			<div className="ico star mx-auto "><i className="far fa-star"></i></div>
+			<div className="ico list mx-auto"><i className="fas fa-list-ul"></i></div>
+			<div className="ico step mx-auto"><i className="fab fa-wpforms mx-1"></i></div>
+
 			
+		</div>
+		
+			{/* <div class="container">
+				<div class="row">
+					<div class="col">
+						Column
+					</div>
+					<div class="col">
+						Column
+					</div>
+					<div class="col">
+						Column
+					</div>
+				</div>
+			</div> */}
 		</div>
 	);
 };

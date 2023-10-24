@@ -4,13 +4,12 @@ body {
 
 .box {
     display: flex;
-    /* justify-content: center; */
     position: relative;
     width: 50vw;
     height: 30vh;
     top: 249px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0);
 }
 
 .ico {
@@ -19,21 +18,23 @@ body {
     height: 17vh;
     position: relative;
     top: 6vh;
-    box-shadow: 3px 1px 33px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
     border-radius: 31%;
-    justify-content: center;
 }
 
 
-.ico:active{
-    box-shadow: 3px 1px 33px 1px rgba(0, 0, 0, 0.35);
+.ico:active {
+    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
 }
 
 i {
+    color: rgba(0, 0, 0, 0.993);
     position: relative;
     top: 1.3rem;
-    left: 1.5rem;
+    left: 1.6rem;
     font-size: 11vh;
+    opacity: 32%;
+
 }
 
 /* .star{
@@ -57,3 +58,20 @@ i {
     position: relative;
     top: 13vh
 } */
+
+@media (max-width: 600px) {
+    .box {
+        display: block;
+        position: relative;
+        width: 73vw;
+        height: 79vh;
+        top: 83px;
+        margin: auto;
+        background-color: rgba(247, 140, 0, 0);
+    }
+    .ico {
+        top: -5vh;
+        width: 38vw;
+        margin-top: 5rem;
+    }
+}
