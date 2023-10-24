@@ -1,36 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Star from "./star.js";
+import Step from "./step.js";
+import List from "./list.js";
 
 
 
 const Home = () => {
-	// const { actions, store } = useContext(Context);
+	const [isActive, setIsactive]  = useState(false);
+
+	const handlerClick = (e) => {
+		e.preventDefault()
+		setIsactive(!isActive)
+		console.log(isActive)
+	}
+	useEffect(() => {
+
+		console.log(isActive);
+	}, []);
+
 
 	return (
-
-		<div>
-			<div className="box">
-
-			<div className="ico star mx-auto "><i className="far fa-star"></i></div>
-			<div className="ico list mx-auto"><i className="fas fa-list-ul"></i></div>
-			<div className="ico step mx-auto"><i className="fab fa-wpforms mx-1"></i></div>
-
-			
-		</div>
-		
-			{/* <div class="container">
-				<div class="row">
-					<div class="col">
-						Column
-					</div>
-					<div class="col">
-						Column
-					</div>
-					<div class="col">
-						Column
-					</div>
+		<>
+			{(isActive === false) ?
+				<div className="box">
+					<div className="ico star mx-auto" onClick={handlerClick}><i className="far fa-star"></i></div>
+					<div className="ico list mx-auto" onClick={handlerClick}><i className="fas fa-list-ul"></i></div>
+					<div className="ico step mx-auto" onClick={handlerClick}><i className="fab fa-wpforms mx-1"></i></div>
 				</div>
-			</div> */}
-		</div>
+
+				:
+				<Star />
+				// <div className="box">
+
+				// 	<div className="ico star mx-auto d-none"><i className="far fa-star"></i></div>
+				// 	<div className="ico list mx-auto d-none"><i className="fas fa-list-ul"></i></div>
+				// 	<div className="ico step mx-auto d-none"><i className="fab fa-wpforms mx-1"></i></div>
+				// </div>
+			}
+		</>
 	);
 };
 

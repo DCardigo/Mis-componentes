@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Star = () => {
+const Step = () => {
 	return (
 			<div className="box">
 
@@ -14,4 +14,4 @@ const Star = () => {
 	);
 };
 
-export default Star;
+export default Step;
