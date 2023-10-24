@@ -37,6 +37,23 @@ i {
 
 }
 
+.home{
+    position: relative;
+    top: 18.3rem;
+    left: 40.6rem;
+    background-color: antiquewhite;
+    width: 11vw;
+    height: 6vh;
+    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 12%;
+}
+.home:active {
+    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
+}
+.home p:active{
+    margin-bottom: 0px !important;
+}
+
 /* .star{
     background-color: rgb(139, 211, 245);
     width: 2vw;

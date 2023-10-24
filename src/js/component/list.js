@@ -7,7 +7,7 @@ const List = () => {
 			<div className="box">
 
 				<div className="">
-					<p>holi</p>
+					<p>Lista</p>
 				</div>
 				
 			</div>

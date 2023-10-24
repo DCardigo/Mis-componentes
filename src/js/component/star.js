@@ -7,7 +7,7 @@ const Star = () => {
 			<div className="box">
 
 				<div className="">
-					<p>holi</p>
+					<p>Estrellas</p>
 				</div>
 				
 			</div>
