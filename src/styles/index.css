@@ -7,8 +7,10 @@ body {
     position: relative;
     width: 50vw;
     height: 30vh;
-    top: 249px;
-    margin: auto;
+    margin: 15rem 0 0 22rem;
+    /* left: 50px; */
+    /* top: 249px; */
+    /* margin: auto; */
     background-color: rgba(250, 235, 215, 0);
 }
 
@@ -39,7 +41,7 @@ i {
 
 .home {
     position: relative;
-    top: 18.3rem;
+    top: 2.3rem;
     left: 40.6rem;
     background-color: antiquewhite;
     width: 11vw;
