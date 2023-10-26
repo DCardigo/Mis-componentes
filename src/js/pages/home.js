@@ -12,7 +12,7 @@ const Home = () => {
 	const [isStar, setIsStar] = useState(false);
 	const [isStep, setIsStep] = useState(false);
 	const [isList, setIsList] = useState(false);
-	
+
 	const handlerState = () => {
 		setIsStar(false)
 		setIsStep(false)
@@ -58,7 +58,7 @@ const Home = () => {
 			}
 
 			<button className="home" onClick={handlerState}><p>HOME</p></button>
-			
+
 		</div>
 	);
 };

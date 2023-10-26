@@ -117,7 +117,44 @@ i {
         width: 35vw;
         height: 7vh;
     }
-    .home p{
+
+    .home p {
         left: 0.2rem;
     }
+}
+
+#star {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 10px 10px 0px 1px hsla(0, 0%, 100%, 0.349);
+    color: #000000;
+    position: relative;
+    top: -18vh;
+    left: 4vw;
+    height: 44vh;
+    width: 45vw;
+    border-radius: 3%;
+    /* transition: all .5s; */
+}
+
+/* 
+#modal.active {
+    top: 0;
+  }
+     */
+
+#estrella{
+    color: rgba(210, 210, 210, 0.61);
+    position:static;
+    
+    font-size: 11vh;
+    opacity: 100% !important;
+}
+
+#estrella:hover{
+    color: rgb(255, 217, 0);
+    
+}
+#estrella:active{
+    color: rgb(255, 217, 0);
+    
 }
