@@ -9,21 +9,21 @@ const Star = () => {
 	const [star3, setStar3] = useState()
 	const [star4, setStar4] = useState()
 	const [star5, setStar5] = useState()
-	const [count1, setCount1] = useState(0)
-	const [count2, setCount2] = useState(0)
-	const [count3, setCount3] = useState(0)
-	const [count4, setCount4] = useState(0)
-	const [count5, setCount5] = useState(0)
+	const [count1, setCount1] = useState(false)
+	const [count2, setCount2] = useState(false)
+	const [count3, setCount3] = useState(false)
+	const [count4, setCount4] = useState(false)
+	const [count5, setCount5] = useState(false)
 
 	const handlerClick5 = () =>{
-		setCount5(count5 + 1);
+		setCount5(!count5);
 		console.log(count5);
-		if (count5 % 2 === 1){
-			setStar1('rgba(210, 210, 210, 0.61)')
-			setStar2('rgba(210, 210, 210, 0.61)')
-			setStar3('rgba(210, 210, 210, 0.61)')
-			setStar4('rgba(210, 210, 210, 0.61)')
-			setStar5('rgba(210, 210, 210, 0.61)')
+		if (count5  === true){
+			setStar1()
+			setStar2()
+			setStar3()
+			setStar4()
+			setStar5()
 		} else{
 			setStar1('rgb(255, 217, 0)')
 			setStar2('rgb(255, 217, 0)')
@@ -32,48 +32,74 @@ const Star = () => {
 			setStar5('rgb(255, 217, 0)');
 		}
 	}
+
 	const handlerClick1 = () =>{
-		setCount1(count1 + 1);
-		if (count1 % 2 === 1){
-			setStar1('rgba(210, 210, 210, 0.61)')
+		console.log(count1);
+		setCount1(!count1);
+		if (count1  === true){
+			setStar1()
 		} else{
 			setStar1('rgb(255, 217, 0)');
 		}
+		if (count2  === true || count3  === true || count4  === true || count5  === true){
+			setStar2()
+			setStar3()
+			setStar4()
+			setStar5()
+		}
 	}
 	const handlerClick2 = () =>{
-		setCount2(count2 + 1);
-		if (count2 % 2 === 1){
-			setStar1('rgba(210, 210, 210, 0.61)')
-			setStar2('rgba(210, 210, 210, 0.61)')
+		console.log(count2);
+		setCount2(!count2);
+		if (count2  === true){
+			setStar1()
+			setStar2()
 		} else{
 			setStar1('rgb(255, 217, 0)')
 			setStar2('rgb(255, 217, 0)')
 		}
+		if (count3  === true || count4  === true || count5  === true){
+			
+			setStar3()
+			setStar4()
+			setStar5()
+		}
 	}
 	const handlerClick3 = () =>{
-		setCount3(count3 + 1);
-		if (count3 % 2 === 1){
-			setStar1('rgba(210, 210, 210, 0.61)')
-			setStar2('rgba(210, 210, 210, 0.61)')
-			setStar3('rgba(210, 210, 210, 0.61)')
+		console.log(count3);
+		setCount3(!count3);
+		if (count3  === true){
+			setStar1()
+			setStar2()
+			setStar3()
 		} else{
 			setStar1('rgb(255, 217, 0)')
 			setStar2('rgb(255, 217, 0)')
 			setStar3('rgb(255, 217, 0)')
 		}
+		if (count4  === true || count5  === true){
+			
+			setStar4()
+			setStar5()
+		}
 	}
 	const handlerClick4 = () =>{
-		setCount4(count4 + 1);
-		if (count4 % 2 === 1){
-			setStar1('rgba(210, 210, 210, 0.61)')
-			setStar2('rgba(210, 210, 210, 0.61)')
-			setStar3('rgba(210, 210, 210, 0.61)')
-			setStar4('rgba(210, 210, 210, 0.61)')
+		console.log(count4);
+		setCount4(!count4);
+		if (count4 === true){
+			setStar1()
+			setStar2()
+			setStar3()
+			setStar4()
 		} else{
 			setStar1('rgb(255, 217, 0)')
 			setStar2('rgb(255, 217, 0)')
 			setStar3('rgb(255, 217, 0)')
 			setStar4('rgb(255, 217, 0)')
+		}
+		if (count5  === true){
+			
+			setStar5()
 		}
 	}
 	
