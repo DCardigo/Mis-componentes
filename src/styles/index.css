@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: antiquewhite;
+    background-color: #d7e1fa;
 }
 
 .box {
@@ -22,23 +22,27 @@ body {
     height: 17vh;
     position: relative;
     top: 6vh;
-    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
+    box-shadow:10px 10px 3px -2px hsla(222.1, 100%, 77.1%, 0.58);
     border-radius: 31%;
 }
 
 
 .ico:active {
-    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
+    box-shadow:10px 10px 9px -5px hsla(222.1, 100%, 77.1%, 0.58);
 }
 
 i {
     color: rgba(0, 0, 0, 0.993);
     position: relative;
-    top: 1.3rem;
-    left: 1.6rem;
+    /* top: 1.3rem;
+    left: 1.6rem; */
     font-size: 11vh;
     opacity: 32%;
 
+}
+
+.ico i:active{
+    margin-bottom: -25px !important;
 }
 
 .home {
@@ -48,13 +52,13 @@ i {
     background-color: antiquewhite;
     width: 11vw;
     height: 9vh;
-    box-shadow: 3px 1px 33px 15px rgba(0, 0, 0, 0.4);
+    box-shadow:10px 10px 3px -2px hsla(222.1, 100%, 77.1%, 0.58);
     border-radius: 12%;
     margin-bottom: 20px !important;
 }
 
 .home:active {
-    box-shadow: 3px 1px 40px 8px rgba(0, 0, 0, 0.35);
+    box-shadow: 10px 10px 9px -5px hsla(222.1, 100%, 77.1%, 0.58);
 }
 
 .home p {
@@ -68,7 +72,7 @@ i {
 }
 
 .home p:active {
-    margin-bottom: 0px !important;
+    margin-bottom: 5px !important;
 }
 
 /* .star{
@@ -127,7 +131,7 @@ i {
 
 #star {
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 10px 10px 0px 1px hsla(0, 0%, 100%, 0.349);
+    box-shadow:10px 10px 8px 1px hsla(222.1, 100%, 77.1%, 0.58);
     color: #000000;
     position: relative;
     top: -18vh;
@@ -137,26 +141,13 @@ i {
     border-radius: 3%;
 }
 
-#pr{
-    width: 15vw !important;
-}
-
 
 
 #estrella{
     color: rgba(210, 210, 210, 0.61);
     position:static;
-    
     font-size: 11vh;
     opacity: 100% !important;
-}
-
-#estrella:hover{
-    color: rgba(255, 217, 0, 0.5)
-    
-}
-#estrella:active{
-    color: rgb(255, 217, 0);
     
 }
 
