@@ -12,7 +12,7 @@ const Home = () => {
 	const [isStar, setIsStar] = useState(false);
 	const [isStep, setIsStep] = useState(false);
 	const [isList, setIsList] = useState(false);
-	
+
 	const handlerState = () => {
 		setIsStar(false)
 		setIsStep(false)
@@ -51,14 +51,14 @@ const Home = () => {
 						<List />
 
 						: <div className="box">
-							<div className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></div>
-							<div className="ico list mx-auto" onClick={handlerStep}><i className="fas fa-list-ul"></i></div>
-							<div className="ico step mx-auto" onClick={handlerList}><i className="fab fa-wpforms mx-1"></i></div>
+							<button className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></button>
+							<button className="ico list mx-auto" onClick={handlerStep}><i className="fas fa-list-ul"></i></button>
+							<button className="ico step mx-auto" onClick={handlerList}><i className="fab fa-wpforms mx-1"></i></button>
 						</div>
 			}
 
 			<button className="home" onClick={handlerState}><p>HOME</p></button>
-			
+
 		</div>
 	);
 };
