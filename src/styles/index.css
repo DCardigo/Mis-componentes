@@ -1,3 +1,5 @@
+
+
 body {
     background-color: antiquewhite;
 }
@@ -133,14 +135,9 @@ i {
     height: 44vh;
     width: 45vw;
     border-radius: 3%;
-    /* transition: all .5s; */
 }
 
-/* 
-#modal.active {
-    top: 0;
-  }
-     */
+
 
 #estrella{
     color: rgba(210, 210, 210, 0.61);
@@ -151,10 +148,11 @@ i {
 }
 
 #estrella:hover{
-    color: rgb(255, 217, 0);
+    color: rgba(255, 217, 0, 0.5)
     
 }
 #estrella:active{
     color: rgb(255, 217, 0);
     
 }
+
