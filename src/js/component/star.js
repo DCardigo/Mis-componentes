@@ -9,11 +9,6 @@ const Star = () => {
 	const [star3, setStar3] = useState()
 	const [star4, setStar4] = useState()
 	const [star5, setStar5] = useState()
-	// const [count1, setCount1] = useState(false)
-	// const [count2, setCount2] = useState(false)
-	// const [count3, setCount3] = useState(false)
-	// const [count4, setCount4] = useState(false)
-	// const [count5, setCount5] = useState(false)
 
 	const handlerClick1 = () => {
 		setStar1('rgb(255, 217, 0)');
@@ -22,7 +17,7 @@ const Star = () => {
 			setStar3()
 			setStar4()
 			setStar5()
-		} 
+		}
 
 	}
 	const handlerClick2 = () => {
@@ -32,7 +27,7 @@ const Star = () => {
 			setStar3()
 			setStar4()
 			setStar5()
-		} 
+		}
 	}
 
 	const handlerClick3 = () => {
@@ -42,7 +37,7 @@ const Star = () => {
 		if (star4 === 'rgb(255, 217, 0)') {
 			setStar4()
 			setStar5()
-		} 
+		}
 	}
 	const handlerClick4 = () => {
 		setStar1('rgb(255, 217, 0)')
@@ -51,7 +46,7 @@ const Star = () => {
 		setStar4('rgb(255, 217, 0)')
 		if (star5 === 'rgb(255, 217, 0)') {
 			setStar5()
-		} 
+		}
 	}
 	const handlerClick5 = () => {
 		setStar1('rgb(255, 217, 0)')
@@ -59,123 +54,55 @@ const Star = () => {
 		setStar3('rgb(255, 217, 0)')
 		setStar4('rgb(255, 217, 0)')
 		setStar5('rgb(255, 217, 0)')
-		// if (star3 === 'rgb(255, 217, 0)') {
-		// 	setStar3()
-		// } 
+
 	}
 
-	// const handlerClick5 = () => {
-	// 	setCount5(!count5);
-	// 	console.log(count5);
-	// 	if (count5 === true) {
-
-	// 		setStar1()
-	// 		setStar2()
-	// 		setStar3()
-	// 		setStar4()
-	// 		setStar5()
-	// 	} else {
-	// 		setCount1(!count1);
-	// 		setCount2(!count2);
-	// 		setCount3(!count3);
-	// 		setCount4(!count4);
-
-	// 		setStar1('rgb(255, 217, 0)')
-	// 		setStar2('rgb(255, 217, 0)')
-	// 		setStar3('rgb(255, 217, 0)')
-	// 		setStar4('rgb(255, 217, 0)')
-	// 		setStar5('rgb(255, 217, 0)');
-	// 	}
-	// }
-
-	// const handlerClick1 = () => {
-	// 	console.log(count1);
-	// 	setCount1(!count1);
-	// 	if (count1 === true) {
-	// 		setStar1()
-	// 	} else {
-
-	// 		setStar1('rgb(255, 217, 0)');
-	// 	}
-	// 	// || count3 === true || count4 === true || count5 === true
-	// 	if (count2 === true) {
-
-	// 		setStar2()
-	// 		setStar3()
-	// 		setStar4()
-	// 		setStar5()
-	// 	}
-	// }
-	// const handlerClick2 = () => {
-	// 	console.log(count2);
-	// 	setCount2(!count2);
-	// 	if (count2 === true) {
-	// 		setStar1()
-	// 		setStar2()
-	// 	} else {
-	// 		setCount1(!count1);
-
-	// 		setStar1('rgb(255, 217, 0)')
-	// 		setStar2('rgb(255, 217, 0)')
-	// 	}
-	// 	// || count4 === true || count5 === true
-	// 	if (count3 === true) {
+	const handleMouseEnter1 = () => {
+		setStar1('rgb(255, 217, 0, 0.5)')
+		if (star2 === 'rgb(255, 217, 0, 0.5)') {
+			setStar2()
+			setStar3()
+			setStar4()
+			setStar5()
+		}
 
 
-	// 		setStar3()
-	// 		setStar4()
-	// 		setStar5()
-	// 	}
-	// }
-	// const handlerClick3 = () => {
-	// 	console.log(count3);
-	// 	setCount3(!count3);
-	// 	if (count3 === true) {
-	// 		setStar1()
-	// 		setStar2()
-	// 		setStar3()
-	// 	} else {
-	// 		setCount1(!count1);
-	// 		setCount2(!count2);
-
-	// 		setStar1('rgb(255, 217, 0)')
-	// 		setStar2('rgb(255, 217, 0)')
-	// 		setStar3('rgb(255, 217, 0)')
-	// 	}
-	// 	// || count5 === true
-	// 	if (count4 === true) {
-
-
-	// 		setStar4()
-	// 		setStar5()
-	// 	}
-	// }
-	// const handlerClick4 = () => {
-	// 	console.log(count4);
-	// 	setCount4(!count4);
-	// 	if (count4 === true) {
-
-	// 		setStar1()
-	// 		setStar2()
-	// 		setStar3()
-	// 		setStar4()
-	// 	} else {
-	// 		setCount1(!count1);
-	// 		setCount2(!count2);
-	// 		setCount3(!count3);
-
-	// 		setStar1('rgb(255, 217, 0)')
-	// 		setStar2('rgb(255, 217, 0)')
-	// 		setStar3('rgb(255, 217, 0)')
-	// 		setStar4('rgb(255, 217, 0)')
-	// 	}
-	// 	if (count5 === true) {
-
-
-	// 		setStar5()
-	// 	}
-	// }
-
+	};
+	const handleMouseEnter2 = () => {
+		setStar1('rgb(255, 217, 0, 0.5)')
+		setStar2('rgb(255, 217, 0, 0.5)')
+		if (star3 === 'rgb(255, 217, 0, 0.5)') {
+			setStar3()
+			setStar4()
+			setStar5()
+		}
+	};
+	const handleMouseEnter3 = () => {
+		setStar1('rgb(255, 217, 0, 0.5)')
+		setStar2('rgb(255, 217, 0, 0.5)')
+		setStar3('rgb(255, 217, 0, 0.5)')
+		if (star4 === 'rgb(255, 217, 0, 0.5)') {
+			setStar4()
+			setStar5()
+		}
+	};
+	const handleMouseEnter4 = () => {
+		setStar1('rgb(255, 217, 0, 0.5)')
+		setStar2('rgb(255, 217, 0, 0.5)')
+		setStar3('rgb(255, 217, 0, 0.5)')
+		setStar4('rgb(255, 217, 0, 0.5)')
+		if (star5 === 'rgb(255, 217, 0, 0.5)') {
+			setStar5()
+		}
+	};
+	
+	const handleMouseEnter5 = () => {
+		setStar1('rgb(255, 217, 0, 0.5)')
+		setStar2('rgb(255, 217, 0, 0.5)')
+		setStar3('rgb(255, 217, 0, 0.5)')
+		setStar4('rgb(255, 217, 0, 0.5)')
+		setStar5('rgb(255, 217, 0, 0.5)')
+	};
 
 	// const [color, setColor] = useState('rgba(210, 210, 210, 0.61)');
 	// const [color1, setColor1] = useState('rgba(210, 210, 210, 0.61)');
@@ -218,12 +145,12 @@ const Star = () => {
 
 			<div className="text-center " id="star">
 				<h2>¿Qué puntuación das a este componente?</h2>
-				<div>
-					<i id="estrella" className="fas fa-star" style={{ color: star1 }} onClick={handlerClick1}></i>
-					<i id="estrella" className="fas fa-star" style={{ color: star2 }} onClick={handlerClick2}></i>
-					<i id="estrella" className="fas fa-star" style={{ color: star3 }} onClick={handlerClick3}></i>
-					<i id="estrella" className="fas fa-star" style={{ color: star4 }} onClick={handlerClick4} ></i>
-					<i id="estrella" className="fas fa-star" style={{ color: star5 }} onClick={handlerClick5} ></i>
+				<div className="estrella">
+					<i id="estrella" className="fas fa-star" style={{ color: star1 }} onMouseMove={handleMouseEnter1} onClick={handlerClick1}></i>
+					<i id="estrella" className="fas fa-star" style={{ color: star2 }} onMouseMove={handleMouseEnter2} onClick={handlerClick2}></i>
+					<i id="estrella" className="fas fa-star" style={{ color: star3 }} onMouseMove={handleMouseEnter3} onClick={handlerClick3}></i>
+					<i id="estrella" className="fas fa-star" style={{ color: star4 }} onMouseMove={handleMouseEnter4} onClick={handlerClick4} ></i>
+					<i id="estrella" className="fas fa-star" style={{ color: star5 }} onMouseMove={handleMouseEnter5} onClick={handlerClick5} ></i>
 
 				</div>
 
