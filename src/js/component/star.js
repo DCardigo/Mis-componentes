@@ -111,8 +111,8 @@ const Star = () => {
 	return (
 
 		<div className="text-center " id="star">
-			<h2 className="mt-5">¿Qué puntuación das a este componente?</h2>
-			<div className="mt-4">
+			<h2 className="pt-5">¿Qué puntuación das a este componente?</h2>
+			<div className="pt-4">
 				<i id="estrella" className="fas fa-star" style={{ color: star1 }} onMouseEnter={handleMouseEnter1} onClick={handlerClick1}></i>
 				<i id="estrella" className="fas fa-star" style={{ color: star2 }} onMouseEnter={handleMouseEnter2} onClick={handlerClick2}></i>
 				<i id="estrella" className="fas fa-star" style={{ color: star3 }} onMouseEnter={handleMouseEnter3} onClick={handlerClick3}></i>
@@ -122,16 +122,10 @@ const Star = () => {
 			</div>
 
 			{(star1 === 'rgb(255, 217, 0)') || (star2 === 'rgb(255, 217, 0)') || (star3 === 'rgb(255, 217, 0)') || (star4 === 'rgb(255, 217, 0)') || (star5 === 'rgb(255, 217, 0)') ?
-				<p className="mt-4 fs-3">Gracias por tu respuesta</p>
+				<p className="pt-4 fs-3">Gracias por tu respuesta</p>
 				: null}
 
 		</div>
-		// <div className="box">
-
-
-		// </div>
-
-
 	);
 };
 
