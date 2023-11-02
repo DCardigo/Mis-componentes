@@ -106,12 +106,12 @@ const Star = () => {
 		setStar5('rgb(255, 217, 0, 0.5)')
 
 	};
-
+	
 
 	return (
-
-		<div className="text-center " id="star">
-			<h2 className="pt-5">¿Qué puntuación das a este componente?</h2>
+		<div className=" text-center" id="star">
+			
+			<h2>¿Qué puntuación das a este componente?</h2>
 			<div className="pt-4">
 				<i id="estrella" className="fas fa-star" style={{ color: star1 }} onMouseEnter={handleMouseEnter1} onClick={handlerClick1}></i>
 				<i id="estrella" className="fas fa-star" style={{ color: star2 }} onMouseEnter={handleMouseEnter2} onClick={handlerClick2}></i>
