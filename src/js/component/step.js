@@ -7,7 +7,7 @@ const Step = () => {
 			<div className="box">
 
 				<div className="">
-					<p>FOrmulario</p>
+					<p>Formulario</p>
 				</div>
 				
 			</div>
