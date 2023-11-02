@@ -108,8 +108,6 @@ i {
 
 .volver {
     position: relative;
-    /* top: -7rem;
-    left: 25rem; */
     color: #a6a6a6;
     background-color: #d7e1fa00;
     border: transparent
@@ -158,4 +156,9 @@ i {
 
 .hab-list{
     text-align: start;
+}
+.hab-list button{
+    color: #6f6fbf;
+    background-color: #d7e1fa00;
+    border: transparent
 }
