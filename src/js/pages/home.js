@@ -54,12 +54,13 @@ const Home = () => {
 							<button className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></button>
 							<button className="ico step mx-auto" onClick={handlerStep}><i className="fab fa-wpforms mx-1"></i></button>
 							<button className="ico list mx-auto" onClick={handlerList}><i className="fas fa-list-ul"></i></button>
-							
+
 						</div>
 			}
 
-			{/* <button className="home" onClick={handlerState}><p>HOME</p></button> */}
+			{(isStar === true)?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver</button>:null}
 
+			
 		</div>
 	);
 };
