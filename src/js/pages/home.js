@@ -58,7 +58,7 @@ const Home = () => {
 						</div>
 			}
 
-			<button className="home" onClick={handlerState}><p>HOME</p></button>
+			{/* <button className="home" onClick={handlerState}><p>HOME</p></button> */}
 
 		</div>
 	);
