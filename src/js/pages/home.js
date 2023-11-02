@@ -52,8 +52,9 @@ const Home = () => {
 
 						: <div className="box">
 							<button className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></button>
-							<button className="ico list mx-auto" onClick={handlerStep}><i className="fas fa-list-ul"></i></button>
-							<button className="ico step mx-auto" onClick={handlerList}><i className="fab fa-wpforms mx-1"></i></button>
+							<button className="ico step mx-auto" onClick={handlerStep}><i className="fab fa-wpforms mx-1"></i></button>
+							<button className="ico list mx-auto" onClick={handlerList}><i className="fas fa-list-ul"></i></button>
+							
 						</div>
 			}
 
