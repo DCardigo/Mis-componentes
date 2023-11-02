@@ -18,10 +18,10 @@ const List = () => {
 			<div className="caja1 d-flex">
 
 				{/* Dropdown */}
-				<div className="dropdown col-8">
+				<div className="dropdown col-8 text-center">
 					{items.map((item, index) => (
-						<div key={index} onClick={() => addItem(item)}>
-							{item}
+						<div key={index} onClick={() => addItem(item)} id="seleccion" className="rounded">
+							{items.length}. {item}
 						</div>
 					))}
 					<button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +35,7 @@ const List = () => {
 				</div>
 				<div className="hab-list col-4 ">
 					<p className="fw-bold">Habilidades sugeridas</p>
-					<button>+ Html</button>
+					<button onClick={() => addItem('Html')}>+ Html</button>
 				</div>
 
 			</div>
