@@ -173,3 +173,9 @@ i {
     padding: 10px 1px 0px 10px;
     margin: 11px 0px 15px 29px;
 }
+
+.btn-close{
+    color: #ffffff !important;
+    background-color: #d7e1fa00 !important;
+    border: transparent
+}
