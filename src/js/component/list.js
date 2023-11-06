@@ -17,17 +17,18 @@ const List = () => {
 		setItems(updatedItems);
 
 	};
-	
-	const newList = items.map(function(item,i){
 
-        
-        return (<li className="list-group-item px-2 float-start" id={i} key = {i}>
-            
-            {items.length}. {item}
+	const newList = items.map(function (item, i) {
 
-            <button  type="button" onClick={() => removeItem(item)} className="btn float-end px-2 py-0" aria-label="Close">x</button>
-               
-            </li>)})
+
+		return (<li className="list-group-item px-2 float-start" id={i} key={i}>
+
+			{items.length}. {item}
+
+			<button type="button" onClick={() => removeItem(item)} className="btn float-end px-2 py-0" aria-label="Close">x</button>
+
+		</li>)
+	})
 
 
 	return (
@@ -38,14 +39,16 @@ const List = () => {
 
 				{/* Dropdown */}
 				<div className="dropdown col-8 text-center">
-					{newList}
+					<ul className="list-group lista2 d-flex col-8 mt-5 shadow-lg5 bg-body rounded">
+						{newList}
+					</ul>
 					<button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Dropdown button
 					</button>
 					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 						<li>
 							<p className="dropdown-item" onClick={() => addItem('React')} href="#">React</p>
-							
+
 						</li>
 						<li><a className="dropdown-item" href="#">Another action</a></li>
 						<li><a className="dropdown-item" href="#">Something else here</a></li>

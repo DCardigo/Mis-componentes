@@ -144,6 +144,14 @@ i {
     border-color: transparent;
     color: #6f6fbf;
 }
+.lista2{
+    width:26vw;
+    height: 7vh;
+    text-align: start;
+    background-color: #002fff;
+    border-color: transparent;
+    color: #6f6fbf;
+}
 
 .dropdown-menu{
     width:26vw;
