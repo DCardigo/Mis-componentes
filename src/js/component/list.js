@@ -17,6 +17,17 @@ const List = () => {
 		setItems(updatedItems);
 
 	};
+	
+	const newList = items.map(function(item,i){
+
+        
+        return (<li className="list-group-item px-2 float-start" id={i} key = {i}>
+            
+            {items.length}. {item}
+
+            <button  type="button" onClick={() => removeItem(item)} className="btn float-end px-2 py-0" aria-label="Close">x</button>
+               
+            </li>)})
 
 
 	return (
@@ -27,13 +38,7 @@ const List = () => {
 
 				{/* Dropdown */}
 				<div className="dropdown col-8 text-center">
-					{items.map((item, index) => (
-						
-						<div key={index} onClick={() => addItem(item)} id="seleccion" className="rounded">
-							{items.length}. {item}
-							<button type="button" onClick={() => removeItem(item, i)} className="btn-close float-end px-2 py-0" aria-label="Close"></button>
-						</div>
-					))}
+					{newList}
 					<button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Dropdown button
 					</button>
