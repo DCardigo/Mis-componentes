@@ -58,8 +58,8 @@ const Home = () => {
 						</div>
 			}
 
-			{(isStar === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}style={{left: "32rem", top: "-7rem" }}>//Volver</button>
-			:(isList === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}style={{left: "32rem", top: "-27rem" }}>//Volver</button>
+			{(isStar === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver//</button>
+			:(isList === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver</button>
 		:null}
 
 			

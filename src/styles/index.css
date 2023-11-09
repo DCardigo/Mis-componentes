@@ -64,6 +64,20 @@ i {
     top: 13vh
 } */
 
+.volver {
+    font-size: 4vh;
+    position: relative;
+    color: #a6a6a6;
+    background-color: #d7e1fa00;
+    border: transparent;
+    /* left: 54rem; 
+    top: 18rem  */
+}
+
+.volver:hover{
+    color:rgb(255, 217, 0);
+}
+
 @media (max-width: 600px) {
     .box {
         display: block;
@@ -106,12 +120,7 @@ i {
 
 }
 
-.volver {
-    position: relative;
-    color: #a6a6a6;
-    background-color: #d7e1fa00;
-    border: transparent
-}
+
 
 /* List */
 
@@ -131,7 +140,7 @@ i {
     position: relative;
     top: 1vh;
     left: 27vw;
-    height: 77vh;
+    height: 51vh;
     width: 45vw;
     border-radius: 3%;
     padding-top: 4rem;
@@ -151,6 +160,8 @@ i {
     background-color: #002fff;
     border-color: transparent;
     color: #6f6fbf;
+    margin-left: 2,5rem;
+    margin-bottom: 1rem;;
 }
 
 .dropdown-menu{
@@ -187,3 +198,4 @@ i {
     background-color: #d7e1fa00 !important;
     border: transparent
 }
+

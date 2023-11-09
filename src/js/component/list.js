@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const List = () => {
 
 	const [items, setItems] = useState([]);
-	const [prueba, setPrueba] = useState(false);
+	const [list, setList] = useState(false);
 
 	//   AÑADIR ELEMENTO
 
@@ -27,7 +27,7 @@ const List = () => {
 		
 			return (
 
-				<li className="list-group-item px-2 float-start" id={i} key={i}>
+				<li className="list-group-item px-2 float-start " id={i} key={i}>
 
 					{i + 1}. {item}
 
@@ -47,9 +47,14 @@ const List = () => {
 
 				{/* Dropdown */}
 				<div className="dropdown col-8 text-center">
-					<ul className="list-group lista2 d-flex col-8 shadow-lg5 bg-body rounded">
+					{(items.length != 0) ?
+					<ul className="lista2 list-group  d-flex col-8 shadow-lg5 bg-body rounded ">
 						{newList}
-					</ul>
+					</ul> : null }
+					{/* <div className="newList d-flex col-8 shadow-lg5 bg-body rounded">
+						{newList}
+					</div> */}
+					
 					<button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Dropdown button
 					</button>
