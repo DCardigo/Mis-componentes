@@ -5,30 +5,38 @@ import React, { useState, useEffect } from "react";
 const List = () => {
 
 	const [items, setItems] = useState([]);
+	const [prueba, setPrueba] = useState(false);
+
+	//   AÑADIR ELEMENTO
 
 	const addItem = (newItem) => {
-		setItems([...items, newItem]);
-	};
+		 if (items.includes(newItem) === false) {
+			setItems([...items, newItem])}
+}
 
 	//   ELIMINAR ELEMENTO
 
 	const removeItem = (tarea, i) => {
-		const updatedItems = items.filter((item) => item != tarea);
+		const updatedItems = items.filter((item, i) => item[i] != tarea[i]);
 		setItems(updatedItems);
+		setPrueba(false);
 
 	};
 
 	const newList = items.map(function (item, i) {
+		
+			return (
 
+				<li className="list-group-item px-2 float-start" id={i} key={i}>
 
-		return (<li className="list-group-item px-2 float-start" id={i} key={i}>
+					{i + 1}. {item}
 
-			{items.length}. {item}
+					<button type="button" onClick={() => removeItem(item)} className="btn float-end px-2 py-0" aria-label="Close">x</button>
 
-			<button type="button" onClick={() => removeItem(item)} className="btn float-end px-2 py-0" aria-label="Close">x</button>
+				</li>
 
-		</li>)
-	})
+			)
+		})
 
 
 	return (
@@ -39,7 +47,7 @@ const List = () => {
 
 				{/* Dropdown */}
 				<div className="dropdown col-8 text-center">
-					<ul className="list-group lista2 d-flex col-8 mt-5 shadow-lg5 bg-body rounded">
+					<ul className="list-group lista2 d-flex col-8 shadow-lg5 bg-body rounded">
 						{newList}
 					</ul>
 					<button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
