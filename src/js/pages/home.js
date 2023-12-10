@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ChakraProvider } from '@chakra-ui/react'
 import Star from "../component/star.js";
 import Step from "../component/step.js";
 import List from "../component/list.js";
@@ -35,35 +36,38 @@ const Home = () => {
 
 
 	return (
+		<ChakraProvider>
 
-		<div>
+			<div>
 
-			{(isStar === true) ?
+				{(isStar === true) ?
 
-				<Star />
+					<Star />
 
-				: (isStep === true) ?
+					: (isStep === true) ?
 
-					<Step />
+						<Step />
 
-					: (isList === true) ?
+						: (isList === true) ?
 
-						<List />
+							<List />
 
-						: <div className="box">
-							<button className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></button>
-							<button className="ico step mx-auto" onClick={handlerStep}><i className="fab fa-wpforms mx-1"></i></button>
-							<button className="ico list mx-auto" onClick={handlerList}><i className="fas fa-list-ul"></i></button>
+							: <div className="box">
+								<button className="ico star mx-auto" onClick={handlerStar}><i className="far fa-star"></i></button>
+								<button className="ico step mx-auto" onClick={handlerStep}><i className="fab fa-wpforms mx-1"></i></button>
+								<button className="ico list mx-auto" onClick={handlerList}><i className="fas fa-list-ul"></i></button>
 
-						</div>
-			}
+							</div>
+				}
 
-			{(isStar === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver//</button>
-			:(isList === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver</button>
-		:null}
+				{(isStar === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver//</button>
+				:(isList === true) ?<button className="volver text-start buttont-4 px-3" onClick={handlerState}>//Volver</button>
+			:null}
 
-			
-		</div>
+				
+			</div>
+
+		</ChakraProvider>
 	);
 };
 

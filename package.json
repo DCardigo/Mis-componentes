@@ -57,6 +57,10 @@
 		]
 	},
 	"dependencies": {
+		"@chakra-ui/react": "^2.8.2",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"framer-motion": "^10.16.16",
 		"mdb-react-ui-kit": "^6.3.0",
 		"prop-types": "^15.7.2",
 		"query-string": "^7.0.1",
